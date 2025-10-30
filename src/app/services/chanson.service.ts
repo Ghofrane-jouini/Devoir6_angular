@@ -27,87 +27,98 @@ export class ChansonService {
     ];
 
     this.chansons = [
-      {
-        idChanson: 1,
-        titre: "Shape of You",
-        artiste: "Ed Sheeran",
-        duree: 4.2,
-        dateSortie: new Date("2017-01-06"),
-        Genre: { idGen: 1, nomGen: "Pop" }
-      },
-      {
-        idChanson: 2,
-        titre: "Blinding Lights",
-        artiste: "The Weeknd",
-        duree: 3.5,
-        dateSortie: new Date("2019-11-29"),
-        Genre: { idGen: 8, nomGen: "Électro" }
-      },
-      {
-        idChanson: 3,
-        titre: "Someone Like You",
-        artiste: "Adele",
-        duree: 4.4,
-        dateSortie: new Date("2011-01-24"),
-        Genre: { idGen: 10, nomGen: "Romantique" }
-      },
-      {
-        idChanson: 4,
-        titre: "Bohemian Rhapsody",
-        artiste: "Queen",
-        duree: 5.9,
-        dateSortie: new Date("1975-10-31"),
-        Genre: { idGen: 2, nomGen: "Rock" }
-      },
-      {
-        idChanson: 5,
-        titre: "Lose Yourself",
-        artiste: "Eminem",
-        duree: 5.2,
-        dateSortie: new Date("2002-10-28"),
-        Genre: { idGen: 3, nomGen: "Hip-Hop" }
-      },
-      {
-        idChanson: 6,
-        titre: "What a Wonderful World",
-        artiste: "Louis Armstrong",
-        duree: 2.2,
-        dateSortie: new Date("1967-10-18"),
-        Genre: { idGen: 4, nomGen: "Jazz" }
-      },
-      {
-        idChanson: 7,
-        titre: "No Scrubs",
-        artiste: "TLC",
-        duree: 3.4,
-        dateSortie: new Date("1999-03-24"),
-        Genre: { idGen: 5, nomGen: "R&B" }
-      },
-      {
-        idChanson: 8,
-        titre: "Redemption Song",
-        artiste: "Bob Marley",
-        duree: 3.5,
-        dateSortie: new Date("1980-10-10"),
-        Genre: { idGen: 6, nomGen: "Reggae" }
-      },
-      {
-        idChanson: 9,
-        titre: "Enter Sandman",
-        artiste: "Metallica",
-        duree: 5.3,
-        dateSortie: new Date("1991-07-29"),
-        Genre: { idGen: 7, nomGen: "Metal" }
-      },
-      {
-        idChanson: 10,
-        titre: "Skinny Love",
-        artiste: "Bon Iver",
-        duree: 3.6,
-        dateSortie: new Date("2007-06-01"),
-        Genre: { idGen: 11, nomGen: "Folk" }
-      }
-    ];
+  {
+    idChanson: 1,
+    titre: "Shape of You",
+    artiste: "Ed Sheeran",
+    duree: 4.2,
+    dateSortie: new Date("2017-01-06"),
+    Genre: this.Genres[0],
+    email:"-"
+  },
+  {
+    idChanson: 2,
+    titre: "Blinding Lights",
+    artiste: "The Weeknd",
+    duree: 3.5,
+    dateSortie: new Date("2019-11-29"),
+    Genre: this.Genres[7],
+    email:"-"
+  },
+  {
+    idChanson: 3,
+    titre: "Someone Like You",
+    artiste: "Adele",
+    duree: 4.4,
+    dateSortie: new Date("2011-01-24"),
+    Genre: this.Genres[9],
+    email:"-"
+  },
+  {
+    idChanson: 4,
+    titre: "Bohemian Rhapsody",
+    artiste: "Queen",
+    duree: 5.9,
+    dateSortie: new Date("1975-10-31"),
+    Genre: this.Genres[1],
+    email:"-"
+  },
+  {
+    idChanson: 5,
+    titre: "Lose Yourself",
+    artiste: "Eminem",
+    duree: 5.2,
+    dateSortie: new Date("2002-10-28"),
+    Genre: this.Genres[2], 
+    email:"-"
+  },
+  {
+    idChanson: 6,
+    titre: "What a Wonderful World",
+    artiste: "Louis Armstrong",
+    duree: 2.2,
+    dateSortie: new Date("1967-10-18"),
+    Genre: this.Genres[5], 
+    email:"-"
+  },
+  {
+    idChanson: 7,
+    titre: "No Scrubs",
+    artiste: "TLC",
+    duree: 3.4,
+    dateSortie: new Date("1999-03-24"),
+    Genre: this.Genres[3], 
+    email:"-"
+  },
+  {
+    idChanson: 8,
+    titre: "Redemption Song",
+    artiste: "Bob Marley",
+    duree: 3.5,
+    dateSortie: new Date("1980-10-10"),
+    Genre: this.Genres[6], 
+    email:"-"
+  },
+  {
+    idChanson: 9,
+    titre: "Enter Sandman",
+    artiste: "Metallica",
+    duree: 5.3,
+    dateSortie: new Date("1991-07-29"),
+    Genre: this.Genres[1], 
+    email:"-"
+  },
+  {
+    idChanson: 10,
+    titre: "Skinny Love",
+    artiste: "Bon Iver",
+    duree: 3.6,
+    dateSortie: new Date("2007-06-01"),
+    Genre: this.Genres[8], 
+    email:"-"
+  }
+];
+
   }
 
   listeChansons(): Chanson[] {

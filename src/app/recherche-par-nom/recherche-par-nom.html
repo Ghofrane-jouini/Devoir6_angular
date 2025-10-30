@@ -2,11 +2,17 @@
     <form class="form-inline">
         <div class="form-group mx-sm-3 mb-2 mt-2 ">
             <label>Nom Chanson en tapant</label>
-            <input #nom [(ngModel)]="searchTerm" name="searchTerm" class="form-control">
+            <input #nom [(ngModel)]="searchTerm" name="searchTerm" class="form-control" >
         </div>
     </form>
+    <!--<form class="form-inline">
+        <div class="form-group mx-sm-3 mb-2 mt-2 ">
+            <label>Titre Chanson en tapant</label>
+            <input class="form-control"  #searchTerm (keyup)="onKeyUp(searchTerm.value)" >
+        </div>
+    </form>-->
 
-   <form class="form-inline">
+   <!-- <form class="form-inline">
         <div class="form-group mx-sm-3 mb-2 mt-2">
             <label>Nom Chanson</label>
             <input type="text" class="form-control" [(ngModel)]="titre" name="titre" />
@@ -14,7 +20,7 @@
                 Rechercher
             </button>
         </div>
-        </form>
+    </form>-->
 
     <div class="card shadow mb-4">
         <div class="card-body">
@@ -25,7 +31,8 @@
                     <th>Date Création</th>
                     <th>Genre</th>
                 </tr>
-                @for (chanson of chansons| searchFilter: searchTerm ; track chanson.idChanson ;let index =$index ; let nbr = $count ; let first=$first; let last = $last) {
+                @for (chanson of chansons| searchFilter: searchTerm ; track chanson.idChanson ;let index =$index ; let
+                nbr = $count ; let first=$first; let last = $last) {
                 <!-- @if(last) {
                 <h1>Nombre de chansons : {{ nbr }}</h1>
                 } -->

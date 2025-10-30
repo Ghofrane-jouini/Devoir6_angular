@@ -6,4 +6,5 @@ export interface Chanson {
   duree?: number;
   dateSortie?: Date;
   Genre : Genre;
+  email?:string;
 }
